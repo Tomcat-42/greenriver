@@ -49,6 +49,16 @@ enum Commands {
         #[arg(default_value = "/dev/stdin")]
         input: PathBuf,
     },
+
+    /// Converts an image
+    Convert {
+        /// The path to the input image
+        #[arg(default_value = "/dev/stdin")]
+        input: PathBuf,
+        /// The path to the output image
+        #[arg(default_value = "/dev/stdout")]
+        output: PathBuf,
+    },
 }
 
 impl Commands {
@@ -120,6 +130,11 @@ impl Commands {
         io::save_image(&image, &output)?;
         Ok(())
     }
+    pub fn convert(input: PathBuf, output: PathBuf) -> Result<(), Box<dyn Error>> {
+        let image = io::load_image(&input, quantization::UniformQuantization::new(8, 8, 8)?)?;
+        io::save_image(&image, &output)?;
+        Ok(())
+    }
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -139,5 +154,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             input,
             output,
         ),
+        Commands::Convert { input, output } => Commands::convert(input, output),
     }
 }
