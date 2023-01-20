@@ -1,0 +1,14 @@
+[package]
+name = "greenriver"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+byte-unit = "4.0.18"
+clap = { version = "4.1.1", features = ["derive"] }
+colored = "2.0.0"
+greenfield = { path = "../greenfield" }
+libmath = "0.2.1"
+tabled = { version = "0.10.0", features = ["color"] }
