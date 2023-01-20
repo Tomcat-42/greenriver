@@ -1,0 +1,6 @@
+#!/bin/bash
+
+INPUT=${1:-/dev/stdin}
+OUTPUT=${2:-/dev/stdout}
+
+convert "$INPUT" -background white -alpha remove -alpha off -define png:color-type=2 "$OUTPUT"
