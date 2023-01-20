@@ -1,7 +1,19 @@
-# Greenriver
+<p align="center">
+    <img src=https://cdn0.iconfinder.com/data/icons/landscape-collection/383/mountain_river-512.png width=138/>
+</p>
 
-A command line tool to work with
-[greenfield images](https://github.com/Tomcat-42/greenfield).
+<h1 align="center">Greenriver</h1>
+
+<p align="center"><strong>A command line tool to work with <a href="https://github.com/Tomcat-42/greenfield">greenfield images</a</strong></p>
+
+<div align="center">
+    <a href="https://crates.io/greenriver" target="_blank">
+    <img src="https://img.shields.io/crates/v/greenriver"></a>
+    <a href="https://docs.rs/greenriver" target="_blank">
+    <img src="https://img.shields.io/docsrs/greenriver"></a>
+    <a href="https://github.com/Tomcat-42/greenriver" target="_blank">
+    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Tomcat-42/greenriver?style=social">
+</div>
 
 ## Installation
 
@@ -46,10 +58,12 @@ are inferred by file name):
 ```bash
 greenriver quantize 5 6 5 Lenna.png Lenna_565.png
 ```
-         Original          |  Quantized to (5, 6, 5)
-:-------------------------:|:-------------------------:
-![](./assets/Lenna.png)  |  ![](./assets/Lenna_565.png)
 
+<p align="center">
+  <img  src="./assets/Lenna.png" width="25%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="./assets/Lenna_565.png" width="25%">
+</p>
 
 ### convert
 
