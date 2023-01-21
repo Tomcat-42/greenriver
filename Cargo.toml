@@ -6,7 +6,7 @@ homepage = "https://github.com/Tomcat-42/greenriver"
 repository = "https://github.com/Tomcat-42/greenriver"
 readme = "Readme.md"
 documentation = "https://docs.rs/greenriver"
-version = "0.1.0"
+version = "0.1.3"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -15,6 +15,6 @@ edition = "2021"
 byte-unit = "4.0.18"
 clap = { version = "4.1.1", features = ["derive"] }
 colored = "2.0.0"
-greenfield = { version="0.1.0", path = "../greenfield" }
+greenfield = { version="0.1.4", path = "../greenfield" }
 libmath = "0.2.1"
 tabled = { version = "0.10.0", features = ["color"] }

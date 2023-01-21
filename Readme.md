@@ -7,7 +7,7 @@
 <p align="center"><strong>A command line tool to work with <a href="https://github.com/Tomcat-42/greenfield">greenfield images</a</strong></p>
 
 <div align="center">
-    <a href="https://crates.io/greenriver" target="_blank">
+    <a href="https://crates.io/crates/greenriver" target="_blank">
     <img src="https://img.shields.io/crates/v/greenriver"></a>
     <a href="https://docs.rs/greenriver" target="_blank">
     <img src="https://img.shields.io/docsrs/greenriver"></a>
@@ -18,7 +18,7 @@
 ## Installation
 
 This command line tool is available on
-[crates.io/greenriver](https://crates.io/greenriver). So, just install it with
+[crates.io/crates/greenriver](https://crates.io/crates/greenriver). So, just install it with
 cargo:
 
 ```bash
@@ -58,11 +58,13 @@ are inferred by file name):
 ```bash
 greenriver quantize 5 6 5 Lenna.png Lenna_565.png
 ```
+![lenna]()
+![Lenna_565]()
 
 <p align="center">
-  <img  src="./assets/Lenna.png" width="25%">
+  <img  src="https://user-images.githubusercontent.com/44649669/213846678-7d655eb4-2f45-431c-9eac-5a2bebd507bc.png" width="25%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="./assets/Lenna_565.png" width="25%">
+  <img src="https://user-images.githubusercontent.com/44649669/213846681-1e603020-b853-442a-8d05-d653e3cad7bf.png" width="25%">
 </p>
 
 ### convert
