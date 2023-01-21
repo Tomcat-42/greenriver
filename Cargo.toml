@@ -1,6 +1,7 @@
 [package]
 name = "greenriver"
 description = "A command line tool to work with greenfield images"
+license = "MIT"
 homepage = "https://github.com/Tomcat-42/greenriver"
 repository = "https://github.com/Tomcat-42/greenriver"
 readme = "Readme.md"
@@ -14,6 +15,6 @@ edition = "2021"
 byte-unit = "4.0.18"
 clap = { version = "4.1.1", features = ["derive"] }
 colored = "2.0.0"
-greenfield = { path = "../greenfield" }
+greenfield = { version="0.1.0", path = "../greenfield" }
 libmath = "0.2.1"
 tabled = { version = "0.10.0", features = ["color"] }
