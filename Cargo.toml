@@ -1,5 +1,10 @@
 [package]
 name = "greenriver"
+description = "A command line tool to work with greenfield images"
+homepage = "https://github.com/Tomcat-42/greenriver"
+repository = "https://github.com/Tomcat-42/greenriver"
+readme = "Readme.md"
+documentation = "https://docs.rs/greenriver"
 version = "0.1.0"
 edition = "2021"
 
